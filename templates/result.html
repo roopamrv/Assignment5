@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment03</title>
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/styles.css" rel="stylesheet">
+</head>
+
+<body>
+<h3>Roopam Verma</h3>
+<br>
+<h3>1001957590</h3>
+
+<table border="2px">
+    <tr><td>DOC_ID</td><td>SCORE</td><td>LINE NUMBER</td><td>LINE</td></tr>
+    {% for result in results %}
+        <tr>
+            <td>{{result.doc_id}}</td>
+            <td>{{result.score}}</td>
+            <td>{{result.line_number}}</td>
+            <td>{{result.line}}</td>
+	    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment03</title>
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/styles.css" rel="stylesheet">
+</head>
+
+<body>
+<h3>Roopam Verma</h3>
+<br>
+<h3>1001957590</h3>
+
+<div class="container">
+	<h3>Upload Document File </h3>
+    <form id="upload_form" action="/upload" method="POST" enctype="multipart/form-data">
+      <input type="file" name="file" accept=".txt" >
+      <input type="submit" value="Upload">
+   </form>
+</div>
+    <br>
+<div class="container">
+    <br>
+    <h3>INSERT KEYWORD</h3>
+    <form id="search" action="/search" method="POST" enctype="multipart/form-data">
+    <label for="key">Enter keywords to search in Documents: </label>
+    <input type="text" value="" id="key" name="key"><br><br>
+    <button type="submit" value="search">Search Word</button>
+    </form>
+</div>
+</body>
+</html>

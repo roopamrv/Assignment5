@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'cseassign5'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5D290BDBD8004155BEEF48F159570453 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_CAF9194B32664A8A81DD5839E922A548 }}
